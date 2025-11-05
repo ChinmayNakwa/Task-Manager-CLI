@@ -134,12 +134,20 @@ The codebase is organized into a modular structure to promote clarity and mainta
 
 ```
 .
-├── src/
-│   ├── main.cpp              # Handles CLI parsing and user interaction
-│   ├── task.h                # Defines the Task data structure
-│   ├── task_manager.h        # Header for the core logic class
-│   ├── task_manager.cpp      # Implements all data structures and algorithms
-│   ├── file_handler.h        # Header for data persistence logic
-│   └── file_handler.cpp      # Implements saving/loading tasks to a file
-└── README.md
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── .env
+├── llm/
+│   └── gemini_helper.py
+└── src/
+    ├── api_client.cpp
+    ├── api_client.h
+    ├── file_handler.cpp
+    ├── file_handler.h
+    ├── main.cpp
+    ├── task.h
+    ├── task_manager.cpp
+    └── task_manager.h
+
 ```
