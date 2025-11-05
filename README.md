@@ -1,6 +1,6 @@
 
 # TaskMaster CLI
-## TaskMaster is a command-line task manager built with C++.
+## TaskMaster is an AI integrated command-line task manager built with C++.
 
 ## Features
 - Task Management: Add, list, complete, and delete tasks directly from your terminal.
