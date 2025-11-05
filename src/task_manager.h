@@ -14,6 +14,8 @@ public:
     ~TaskManager(); // Destructor saves tasks on exit.
 
     void addTask(const std::string& description, int priority);
+    int addTaskAndGetId(const std::string& description, int priority);
+
     void completeTask(int id);
     void deleteTask(int id);
     void addDependency(int taskToWaitFor, int taskThatWaits);

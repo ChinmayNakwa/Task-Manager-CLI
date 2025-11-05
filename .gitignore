@@ -2,4 +2,5 @@ tasks.data
 taskmaster.exe
 .vscode/
 build/
-readme.md
+.env
+llm/venv/

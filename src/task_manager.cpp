@@ -23,6 +23,20 @@ void TaskManager::addTask(const std::string& description, int priority) {
     std::cout << "Success: Added task " << t.id << ": \"" << description << "\"" << std::endl;
 }
 
+int TaskManager::addTaskAndGetId(const std::string& description, int priority) {
+    Task t;
+    t.id = nextId; // Assign the current nextId to the new task
+    t.description = description;
+    t.isCompleted = false;
+    t.priority = priority;
+    tasks[t.id] = t;
+    
+    // Use a slightly more descriptive output for AI-generated tasks
+    std::cout << "Success: Added task " << t.id << ": \"" << description << "\"" << " with priority " << priority << "." << std::endl;
+
+    return nextId++; // Return the ID that was just used, then increment for the next call
+}
+
 void TaskManager::completeTask(int id) {
     if (tasks.find(id) == tasks.end()) {
         std::cerr << "Error: Task with ID " << id << " not found." << std::endl;
